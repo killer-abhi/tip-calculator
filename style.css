@@ -1,0 +1,134 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(185, 41%, 84%);
+}
+.card{
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    margin:10% auto;
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+}
+/* @media (min-width:300px)and (max-width:700px) {
+    .card{
+        width: 15rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        margin:10% auto;
+        border-radius: 2rem;
+        background-color: hsl(0, 0%, 100%);
+        padding: 2rem;
+    }
+    
+} */
+.billDetails{
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inputHeading{
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.1rem;
+}
+.input{
+    width: 90%;
+    border-radius: 0.5em;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    height: 2.4rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-align: right;
+}
+.input::placeholder{
+    color:hsl(183, 100%, 15%);
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-align: right;
+    
+}
+.buttonRows{
+    background-color: transparent;
+}
+.btn{
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: aliceblue;
+    border-radius: 0.4rem;
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+#custom{
+    background-color: hsl(189, 41%, 97%);
+}
+.btn:hover{
+    background-color: hsl(186, 14%, 43%);
+    cursor: pointer;
+}
+
+.tip{
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    display: flex;
+    /* padding: 1rem 1rem; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tipAmount{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.divs{
+    margin-bottom: 2rem;
+    display: flex;
+    background-color: transparent;
+    justify-content:space-around;
+}
+.tipHeading{
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+}
+.amount{
+    color: aqua;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#amountHeading{
+    color: aliceblue;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+#perPerson{
+    background-color: transparent;
+    color: hsl(184, 14%, 56%);
+}
+#resetBTN{
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    margin: 2em auto;
+    height: 3rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: hsl(185, 41%, 84%);
+}

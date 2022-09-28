@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <div class="card">
+    <div class="billDetails">
+      <p>
+          <p class="inputHeading">Bill</p> 
+          <input type="Number" class="input" placeholder="150.00">
+      </p>
+      <p>
+          <p class="inputHeading">Select Tip %</p> 
+          <p class="buttonRows">
+            <button id="5Percent" class="btn">5%</button>
+            <button id="10Percent" class="btn">10%</button>
+            <button id="15Percent" class="btn">15%</button>
+          </p>
+          <p class="buttonRows">
+            <button id="5Percent" class="btn">25%</button>
+            <button id="10Percent" class="btn">50%</button>
+            <button id="15Percent" class="btn" id="custom" >Custom</button>
+          </p>
+      </p>
+      <p>
+        <p class="inputHeading">Number Of Persons</p>
+        <input type="Number" placeholder="5" class="input">
+      </p>
+    </div>
+    <div class="tip">
+        <div class="tipAmount">
+          <div class="divs">
+            <div class="tipHeading">
+              <p id="amountHeading">Tip Amount</p>
+              <p id="perPerson">/ person</p>
+            </div>
+            <p class="amount" id="tipPerPerson">320</p>
+          </div>
+          <div class="divs">
+            <div class="tipHeading">
+              <p id="amountHeading">Tip Amount</p>
+              <p id="perPerson">/ person</p>
+            </div>
+            <p class="amount" id="totalTip">320</p>
+          </div>
+        </div>
+        <button id="resetBTN">RESET</button>
+    </div>
+  </div>
+
+</body>
+</html>
