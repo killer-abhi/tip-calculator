@@ -52,6 +52,7 @@ for(let i=0;i<5;i++){
         else{
             buttons[isClicked].classList.remove("active");
             this.classList.add("active");
+            document.getElementById("custom").value="Custom";
             isClicked=i;
         }
     });
