@@ -9,28 +9,29 @@
   <title>Tip Calculator</title>
 </head>
 <body>
+  <header>Tip Calculator</header>
   <div class="card">
     <div class="billDetails">
       <p>
-          <p class="inputHeading">Bill</p> 
-          <input type="Number" class="input" placeholder="150.00">
+          <p class="inputHeading">Bill</p>  
+          <input type="Number" class="input" required placeholder="00.00" id="bill" min="0" >
       </p>
       <p>
           <p class="inputHeading">Select Tip %</p> 
           <p class="buttonRows">
-            <button id="5Percent" class="btn">5%</button>
-            <button id="10Percent" class="btn">10%</button>
-            <button id="15Percent" class="btn">15%</button>
+            <button id="5Percent" class="btn" onclick={handleButtons(5)}>5%</button>
+            <button id="10Percent" class="btn"onclick={handleButtons(10)}>10%</button>
+            <button id="15Percent" class="btn"onclick={handleButtons(15)}>15%</button>
           </p>
           <p class="buttonRows">
-            <button id="5Percent" class="btn">25%</button>
-            <button id="10Percent" class="btn">50%</button>
-            <button id="15Percent" class="btn" id="custom" >Custom</button>
+            <button id="25Percent" class="btn"onclick={handleButtons(25)}>25%</button>
+            <button id="50Percent" class="btn"onclick={handleButtons(50)}>50%</button>
+            <input type="Number" id="custom" class="custom" placeholder="Custom" min="1" max="100">
           </p>
       </p>
       <p>
         <p class="inputHeading">Number Of Persons</p>
-        <input type="Number" placeholder="5" class="input">
+        <input type="Number" placeholder="0" class="input" id="persons" required min="0" max="100"> 
       </p>
     </div>
     <div class="tip">
@@ -40,19 +41,19 @@
               <p id="amountHeading">Tip Amount</p>
               <p id="perPerson">/ person</p>
             </div>
-            <p class="amount" id="tipPerPerson">320</p>
+            <p class="amount" id="tipPerPerson">0.0</p>
           </div>
           <div class="divs">
             <div class="tipHeading">
-              <p id="amountHeading">Tip Amount</p>
+              <p id="amountHeading">Total</p>
               <p id="perPerson">/ person</p>
             </div>
-            <p class="amount" id="totalTip">320</p>
+            <p class="amount" id="totalTip">0.0</p>
           </div>
         </div>
-        <button id="resetBTN">RESET</button>
+        <button id="resetBTN" onclick={handleReset()}>RESET</button>
     </div>
   </div>
-
+  <script src="./script.js"></script>
 </body>
 </html>
